@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.API", "Cinema.API\Cinema.API.csproj", "{A9854E23-195C-475E-B739-A6655ADD8A9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.Domain", "Cinema.Domain\Cinema.Domain.csproj", "{B482353F-1A02-4F08-97F1-505A9CAE780E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.Application", "Cinema.Application\Cinema.Application.csproj", "{1E2BFEEA-FA75-479B-BD76-4D9259A069FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.Infrastructure", "Cinema.Infrastructure\Cinema.Infrastructure.csproj", "{2A87385D-D5AC-4A00-8FE2-708BF9465D74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9854E23-195C-475E-B739-A6655ADD8A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9854E23-195C-475E-B739-A6655ADD8A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9854E23-195C-475E-B739-A6655ADD8A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9854E23-195C-475E-B739-A6655ADD8A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B482353F-1A02-4F08-97F1-505A9CAE780E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B482353F-1A02-4F08-97F1-505A9CAE780E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B482353F-1A02-4F08-97F1-505A9CAE780E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B482353F-1A02-4F08-97F1-505A9CAE780E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E2BFEEA-FA75-479B-BD76-4D9259A069FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E2BFEEA-FA75-479B-BD76-4D9259A069FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E2BFEEA-FA75-479B-BD76-4D9259A069FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E2BFEEA-FA75-479B-BD76-4D9259A069FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A87385D-D5AC-4A00-8FE2-708BF9465D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A87385D-D5AC-4A00-8FE2-708BF9465D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A87385D-D5AC-4A00-8FE2-708BF9465D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A87385D-D5AC-4A00-8FE2-708BF9465D74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
