@@ -31,7 +31,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Admin\\RiderProjects\\Cinema\\Cinema.Domain\\Cinema.Domain.csproj": {
+                "projectPath": "C:\\Users\\Admin\\RiderProjects\\Cinema\\Cinema.Domain\\Cinema.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
