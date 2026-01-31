@@ -55,4 +55,28 @@ public class MovieService : IMovieService
         _cache.Remove(MoviesCacheKey);
         return movie;
     }
+    
+    public async Task UpdateAsync(Guid id, CreateMovieRequest request)
+    {
+        var movie = await _context.Movies.FindAsync(id);
+        if (movie == null) throw new Exception("Фільм не знайдено");
+
+        movie.Title = request.Title;
+        movie.Genre = request.Genre;
+        movie.Description = request.Description;
+        movie.DurationMinutes = request.DurationMinutes;
+
+        await _context.SaveChangesAsync();
+        _cache.Remove(MoviesCacheKey);
+    }
+
+    public async Task DeleteAsync(Guid id)
+    {
+        var movie = await _context.Movies.FindAsync(id);
+        if (movie == null) throw new Exception("Фільм не знайдено");
+
+        _context.Movies.Remove(movie);
+        await _context.SaveChangesAsync();
+        _cache.Remove(MoviesCacheKey);
+    }
 }

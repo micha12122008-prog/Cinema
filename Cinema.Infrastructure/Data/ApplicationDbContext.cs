@@ -28,7 +28,6 @@ public class ApplicationDbContext : DbContext
             .WithOne(t => t.Movie)
             .HasForeignKey(t => t.MovieId);
 
-        // Унікальний Email
         modelBuilder.Entity<User>()
             .HasIndex(u => u.Email)
             .IsUnique();

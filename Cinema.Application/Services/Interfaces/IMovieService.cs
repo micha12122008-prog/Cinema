@@ -7,4 +7,6 @@ public interface IMovieService
 {
     Task<List<Movie>> GetAllAsync();
     Task<Movie> AddAsync(CreateMovieRequest request);
+    Task UpdateAsync(Guid id, CreateMovieRequest request);
+    Task DeleteAsync(Guid id);
 }
