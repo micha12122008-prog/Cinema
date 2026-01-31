@@ -29,4 +29,20 @@ public class MoviesController : ControllerBase
         var movie = await _movieService.AddAsync(request);
         return CreatedAtAction(nameof(GetAll), new { id = movie.Id }, movie);
     }
+    
+    [HttpPut("{id}")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Update(Guid id, CreateMovieRequest request)
+    {
+        await _movieService.UpdateAsync(id, request);
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Delete(Guid id)
+    {
+        await _movieService.DeleteAsync(id);
+        return NoContent();
+    }
 }
